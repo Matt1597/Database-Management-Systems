@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+ <xs:element name="SportsCentre">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="People">
+     <xs:complexType>
+      <xs:sequence>
+       <xs:element name="person" maxOccurs="unbounded">
+        <xs:complexType>
+         <xs:sequence>
+          <xs:element name="firstname" type="xs:string"></xs:element>
+          <xs:element name="lastname" type="xs:string"></xs:element>
+          <xs:element name="DOB" type="xs:date"></xs:element>
+          <xs:element name="email" type="xs:string"></xs:element>
+         </xs:sequence>
+         <xs:attribute name="SSN" type="xs:int"></xs:attribute>
+        </xs:complexType>
+       </xs:element>
+      </xs:sequence>
+     </xs:complexType>
+    </xs:element>
+    <xs:element name="Staff">
+     <xs:complexType>
+      <xs:sequence>
+       <xs:element name="staffMember" maxOccurs="unbounded">
+        <xs:complexType>
+         <xs:sequence>
+          <xs:element name="SSN" type="xs:int"></xs:element>
+          <xs:element name="salary" type="xs:int"></xs:element>
+          <xs:element name="ManagerID" type="xs:string"></xs:element>
+         </xs:sequence>
+         <xs:attribute name="StaffID" type="xs:int"></xs:attribute>
+        </xs:complexType>
+       </xs:element>
+      </xs:sequence>
+     </xs:complexType>
+    </xs:element>
+    <xs:element name="Members">
+     <xs:complexType>
+      <xs:sequence>
+       <xs:element name="member" maxOccurs="unbounded">
+        <xs:complexType>
+         <xs:sequence>
+          <xs:element name="SSN" type="xs:int"></xs:element>
+          <xs:element name="memberType" type="xs:string"></xs:element>
+         </xs:sequence>
+         <xs:attribute name="MemberID" type="xs:int"></xs:attribute>
+        </xs:complexType>
+       </xs:element>
+      </xs:sequence>
+     </xs:complexType>
+    </xs:element>
+    <xs:element name="Bookings">
+     <xs:complexType>
+      <xs:sequence>
+       <xs:element name="booking" maxOccurs="unbounded">
+        <xs:complexType>
+         <xs:sequence>
+          <xs:element name="StaffID" type="xs:int"></xs:element>
+          <xs:element name="MembershipID" type="xs:int"></xs:element>
+          <xs:element name="RoomID" type="xs:int"></xs:element>
+          <xs:element name="EquipmentID" type="xs:int" maxOccurs="unbounded"></xs:element>
+          <xs:element name="Date" type="xs:date"></xs:element>
+          <xs:element name="Time" type="xs:time"></xs:element>
+          <xs:element name="Cost" type="xs:string"></xs:element>
+         </xs:sequence>
+         <xs:attribute name="BookingID" type="xs:int"></xs:attribute>
+        </xs:complexType>
+       </xs:element>
+      </xs:sequence>
+     </xs:complexType>
+    </xs:element>
+    <xs:element name="Rooms">
+     <xs:complexType>
+      <xs:sequence>
+       <xs:element name="room" maxOccurs="unbounded">
+        <xs:complexType>
+         <xs:sequence>
+          <xs:element name="Name" type="xs:string"></xs:element>
+          <xs:element name="Building" type="xs:string"></xs:element>
+         </xs:sequence>
+         <xs:attribute name="RoomID" type="xs:int"></xs:attribute>
+        </xs:complexType>
+       </xs:element>
+      </xs:sequence>
+     </xs:complexType>
+    </xs:element>
+    <xs:element name="EquipmentHire">
+     <xs:complexType>
+      <xs:sequence>
+       <xs:element name="equipment" maxOccurs="unbounded">
+        <xs:complexType>
+         <xs:sequence>
+          <xs:element name="Type" type="xs:string"></xs:element>
+         </xs:sequence>
+         <xs:attribute name="EquipmentID" type="xs:int"></xs:attribute>
+        </xs:complexType>
+       </xs:element>
+      </xs:sequence>
+     </xs:complexType>
+    </xs:element>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+</xs:schema>

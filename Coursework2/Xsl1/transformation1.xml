@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="FraserXsltFile.xslt"?>
+<SportsCentre>
+	<People>
+		<person SSN = "012">
+			<firstname>Michael</firstname>
+			<lastname>King</lastname>
+			<DOB>1997-02-22</DOB>
+			<email>michaelsill@yahoo.com</email>
+		</person>
+		<person SSN = "321">
+			<firstname>Fraser</firstname>
+			<lastname>Alexander</lastname>
+			<DOB>1997-11-26</DOB>
+			<email>fra@yahoo.com</email>
+		</person>
+		<person SSN = "666">
+			<firstname>Matthew</firstname>
+			<lastname>Reilly</lastname>
+			<DOB>1997-05-01</DOB>
+			<email>breaksphonealot@gmail.com</email>
+		</person>
+		<person SSN = "543">
+			<firstname>Liam</firstname>
+			<lastname>Doyle</lastname>
+			<DOB>1990-10-11</DOB>
+			<email>ilovekerry@gmail.com</email>
+		</person>
+		<person SSN = "865">
+			<firstname>Jack</firstname>
+			<lastname>Doogan</lastname>
+			<DOB>1994-11-20</DOB>
+			<email>jacksmail@gmail.com</email>
+		</person>
+		<person SSN = "343">
+			<firstname>Naz</firstname>
+			<lastname>Abid</lastname>
+			<DOB>1997-03-06</DOB>
+			<email>vividnaz@youtube.com</email>
+		</person>
+		<person SSN = "346">
+			<firstname>Jodi</firstname>
+			<lastname>Henderson</lastname>
+			<DOB>1997-05-01</DOB>
+			<email>batsforthesameteam@yahoo.com</email>
+		</person>
+		<person SSN = "788">
+			<firstname>Louise</firstname>
+			<lastname>Lindsay</lastname>
+			<DOB>1997-07-21</DOB>
+			<email>ginger@brave.com</email>
+		</person>
+		<person SSN = "222">
+			<firstname>Kerr</firstname>
+			<lastname>Brydon</lastname>
+			<DOB>1997-08-12</DOB>
+			<email>kerrsemail@yahoo.com</email>
+		</person>
+		<person SSN = "453">
+			<firstname>Andy</firstname>
+			<lastname>Murray</lastname>
+			<DOB>1987-12-23</DOB>
+			<email>ihearttennis@gmail.com</email>
+		</person>
+		<person SSN = "111">
+			<firstname>Megan</firstname>
+			<lastname>Fox</lastname>
+			<DOB>1984-07-16</DOB>
+			<email>iwould@gmail.com</email>
+		</person>
+		<person SSN = "420">
+			<firstname>Jack</firstname>
+			<lastname>Black</lastname>
+			<DOB>1985-03-30</DOB>
+			<email>schoolofrock@yahoo.com</email>
+		</person>
+		<person SSN = "030">
+			<firstname>Stephen</firstname>
+			<lastname>King</lastname>
+			<DOB>1973-02-24</DOB>
+			<email>booksrgreat@gmail.com</email>
+		</person>
+		<person SSN = "007">
+			<firstname>James</firstname>
+			<lastname>Bond</lastname>
+			<DOB>1983-04-29</DOB>
+			<email>shaken@notstirred.com</email>
+		</person>
+	</People>
+	<Staff>
+		<staffMember StaffID = "001">
+			<SSN>012</SSN>
+			<salary>10000</salary>
+			<ManagerID>002</ManagerID>
+		</staffMember>
+		<staffMember StaffID = "002">
+			<SSN>321</SSN>
+			<salary>20000</salary>
+			<ManagerID>NULL</ManagerID>
+		</staffMember>
+		<staffMember StaffID = "003">
+			<SSN>346</SSN>
+			<salary>15000</salary>
+			<ManagerID>002</ManagerID>
+		</staffMember>
+		<staffMember StaffID = "004">
+			<SSN>788</SSN>
+			<salary>13000</salary>
+			<ManagerID>NULL</ManagerID>
+		</staffMember>
+		<staffMember StaffID = "005">
+			<SSN>222</SSN>
+			<salary>12000</salary>
+			<ManagerID>004</ManagerID>
+		</staffMember>
+	</Staff>
+	<Members>
+		<member MemberID = "1">
+			<SSN>666</SSN>
+			<memberType>Gold</memberType>
+		</member>
+		<member MemberID = "2">
+			<SSN>111</SSN>
+			<memberType>Gold</memberType>
+		</member>
+		<member MemberID = "3">
+			<SSN>543</SSN>
+			<memberType>Silver</memberType>
+		</member>
+		<member MemberID = "4">
+			<SSN>420</SSN>
+			<memberType>Gold</memberType>
+		</member>
+		<member MemberID = "5">
+			<SSN>030</SSN>
+			<memberType>Bronze</memberType>
+		</member>
+		<member MemberID = "6">
+			<SSN>865</SSN>
+			<memberType>Silver</memberType>
+		</member>
+		<member MemberID = "7">
+			<SSN>007</SSN>
+			<memberType>Silver</memberType>
+		</member>
+		<member MemberID = "8">
+			<SSN>343</SSN>
+			<memberType>Bronze</memberType>
+		</member>
+	</Members>
+	<Bookings>
+		<booking BookingID = "1">
+			<StaffID>002</StaffID>
+			<MembershipID>3</MembershipID>
+			<RoomID>1</RoomID>
+			<EquipmentID>1</EquipmentID>
+			<EquipmentID>2</EquipmentID>
+			<Date>2017-04-23</Date>
+			<Time>12:45:00</Time>
+			<Cost>£5.00</Cost>
+		</booking>
+		<booking BookingID = "2">
+			<StaffID>004</StaffID>
+			<MembershipID>7</MembershipID>
+			<RoomID>4</RoomID>
+			<EquipmentID>7</EquipmentID>
+			<Date>2017-04-25</Date>
+			<Time>16:00:00</Time>
+			<Cost>£3.00</Cost>
+		</booking>
+		<booking BookingID = "3">
+			<StaffID>003</StaffID>
+			<MembershipID>5</MembershipID>
+			<RoomID>2</RoomID>
+			<EquipmentID>1</EquipmentID>
+			<EquipmentID>2</EquipmentID>
+			<EquipmentID>4</EquipmentID>
+			<Date>2017-04-30</Date>
+			<Time>12:30:00</Time>
+			<Cost>£6.00</Cost>
+		</booking>
+		<booking BookingID = "4">
+			<StaffID>005</StaffID>
+			<MembershipID>2</MembershipID>
+			<RoomID>5</RoomID>
+			<EquipmentID>7</EquipmentID>
+			<Date>2017-04-27</Date>
+			<Time>15:30:00</Time>
+			<Cost>£4.00</Cost>
+		</booking>
+		<booking BookingID = "5">
+			<StaffID>001</StaffID>
+			<MembershipID>1</MembershipID>
+			<RoomID>1</RoomID>
+			<EquipmentID>1</EquipmentID>
+			<Date>2017-04-25</Date>
+			<Time>14:45:00</Time>
+			<Cost>£4.00</Cost>
+		</booking>
+		<booking BookingID = "6">
+			<StaffID>002</StaffID>
+			<MembershipID>8</MembershipID>
+			<RoomID>7</RoomID>
+			<EquipmentID>5</EquipmentID>
+			<Date>2017-04-19</Date>
+			<Time>10:00:00</Time>
+			<Cost>£4.00</Cost>
+		</booking>
+		<booking BookingID = "7">
+			<StaffID>007</StaffID>
+			<MembershipID>6</MembershipID>
+			<RoomID>3</RoomID>
+			<EquipmentID>3</EquipmentID>
+			<EquipmentID>4</EquipmentID>
+			<Date>2017-04-20</Date>
+			<Time>12:30:00</Time>
+			<Cost>£5.00</Cost>
+		</booking>
+		<booking BookingID = "8">
+			<StaffID>004</StaffID>
+			<MembershipID>4</MembershipID>
+			<RoomID>6</RoomID>
+			<EquipmentID>6</EquipmentID>
+			<Date>2017-04-28</Date>
+			<Time>09:30:00</Time>
+			<Cost>£4.00</Cost>
+		</booking>
+	</Bookings>
+	<Rooms>
+		<room RoomID = "1">
+			<Name>Tennis Hall</Name>
+			<Building>Indoor Sports Building</Building>
+		</room>
+		<room RoomID = "2">
+			<Name>Badminton Hall</Name>
+			<Building>Indoor Sports Building</Building>
+		</room>
+		<room RoomID = "3">
+			<Name>Football Pitch</Name>
+			<Building>Outdoor Sports Field</Building>
+		</room>
+		<room RoomID = "4">
+			<Name>Swimming Pool</Name>
+			<Building>Water Sports Building</Building>
+		</room>
+		<room RoomID = "5">
+			<Name>Diving Pool</Name>
+			<Building>Water Sports Building</Building>
+		</room>
+		<room RoomID = "6">
+			<Name>Rugby Pitch</Name>
+			<Building>Outdoor Sports Field</Building>
+		</room>
+		<room RoomID = "7">
+			<Name>Baseball Field</Name>
+			<Building>Outdoor Sports Field</Building>
+		</room>
+	</Rooms>	
+	<EquipmentHire>
+		<equipment EquipmentID = "1">
+			<Type>Nets</Type>
+		</equipment>
+		<equipment EquipmentID = "2">
+			<Type>Rackets</Type>
+		</equipment>
+		<equipment EquipmentID = "3">
+			<Type>Footballs</Type>
+		</equipment>
+		<equipment EquipmentID = "4">
+			<Type>Shoes</Type>
+		</equipment>
+		<equipment EquipmentID = "5">
+			<Type>Bats</Type>
+		</equipment>
+		<equipment EquipmentID = "6">
+			<Type>Rugby Balls</Type>
+		</equipment>
+		<equipment EquipmentID = "7">
+			<Type>Swimming Caps</Type>
+		</equipment>
+	</EquipmentHire>
+</SportsCentre>	
